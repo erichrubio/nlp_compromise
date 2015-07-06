@@ -240,7 +240,7 @@ var female_names = {
   "g": "ina,wendolyn,wen,oldie",
   "l": "ydia",
   "m": "yrtle,yra,uriel,yrna",
-  "h": "ilda",
+  "h": "ilda,illary",
   "o": "pal,ra,felia",
   "k": "rystal",
   "d": "ixie,ina",
