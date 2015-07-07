@@ -284,6 +284,22 @@ var ambiguous = [
   "devan",
   "rosario",
   "lee"
+  "bernie",
+  "rand",
+  "jeb"
+]
+
+var lastNames = [
+  "rubio",
+  "paul",
+  "bush",
+  "walker",
+  "cruz",
+  "carson",
+  "trump"
+  "clinton",
+  "sanders",
+  "o'Malley"
 ]
 
 var i, arr, i2, l, keys;
@@ -311,6 +327,11 @@ for (i = 0; i < l; i++) {
 l = ambiguous.length
 for (i = 0; i < l; i += 1) {
   main[ambiguous[i]] = "a"
+}
+
+l = lastNames.length
+for (i = 0; i < l; i += 1) {
+  main[lastNames[i]] = "l"
 }
 
 module.exports = main;
