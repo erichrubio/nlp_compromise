@@ -283,7 +283,7 @@ var ambiguous = [
   "andra",
   "devan",
   "rosario",
-  "lee"
+  "lee",
   "bernie",
   "rand",
   "jeb"
