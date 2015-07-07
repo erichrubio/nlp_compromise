@@ -296,7 +296,7 @@ var lastNames = [
   "walker",
   "cruz",
   "carson",
-  "trump"
+  "trump",
   "clinton",
   "sanders",
   "o'Malley"
