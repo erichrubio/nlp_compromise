@@ -289,7 +289,22 @@ var ambiguous = [
   "jeb"
 ]
 
-var lastNames = [
+var politicianFirstNames = [
+  "marco",
+  "rand",
+  "jeb",
+  "scott",
+  "ted",
+  "ben",
+  "ben",
+  "benjamin",
+  "donald",
+  "hillary",
+  "bernie",
+  "martin"
+]
+
+var politicianLastNames = [
   "rubio",
   "paul",
   "bush",
@@ -304,34 +319,48 @@ var lastNames = [
 
 var i, arr, i2, l, keys;
 //add data into the main obj
+
 //males
-keys = Object.keys(male_names)
-l = keys.length
-for (i = 0; i < l; i++) {
-  arr = male_names[keys[i]].split(',')
-  for (i2 = 0; i2 < arr.length; i2++) {
-    main[keys[i] + arr[i2]] = "m"
-  }
-}
+// keys = Object.keys(male_names)
+// l = keys.length
+// for (i = 0; i < l; i++) {
+//   arr = male_names[keys[i]].split(',')
+//   for (i2 = 0; i2 < arr.length; i2++) {
+//     main[keys[i] + arr[i2]] = "m"
+//   }
+// }
 
 //females
-keys = Object.keys(female_names)
-l = keys.length
-for (i = 0; i < l; i++) {
-  arr = female_names[keys[i]].split(',')
-  for (i2 = 0; i2 < arr.length; i2++) {
-    main[keys[i] + arr[i2]] = "f"
-  }
-}
+// keys = Object.keys(female_names)
+// l = keys.length
+// for (i = 0; i < l; i++) {
+//   arr = female_names[keys[i]].split(',')
+//   for (i2 = 0; i2 < arr.length; i2++) {
+//     main[keys[i] + arr[i2]] = "f"
+//   }
+// }
+
 //unisex names
-l = ambiguous.length
+// l = ambiguous.length
+// for (i = 0; i < l; i += 1) {
+//   main[ambiguous[i]] = "a"
+// }
+
+// l = lastNames.length
+// for (i = 0; i < l; i += 1) {
+//   main[lastNames[i]] = "l"
+// }
+
+// Politician first names
+l = politicianFirstNames.length
 for (i = 0; i < l; i += 1) {
-  main[ambiguous[i]] = "a"
+  main[politicianFirstNames[i]] = "pf"
 }
 
-l = lastNames.length
+// Politician first names
+l = politicianLastNames.length
 for (i = 0; i < l; i += 1) {
-  main[lastNames[i]] = "l"
+  main[politicianLastNames[i]] = "pl"
 }
 
 module.exports = main;
