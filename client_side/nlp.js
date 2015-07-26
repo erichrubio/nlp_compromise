@@ -5622,12 +5622,12 @@ var Noun = function (str, sentence, word_i) {
       }
     }
     //see if noun has an honourific, like 'jr.'
-    l = honourifics.length;
-    for (i = 0; i < l; i++) {
-      if (the.word.match(new RegExp("\\b" + honourifics[i] + "\\.?\\b", 'i'))) {
-        return true
-      }
-    }
+    // l = honourifics.length;
+    // for (i = 0; i < l; i++) {
+    //   if (the.word.match(new RegExp("\\b" + honourifics[i] + "\\.?\\b", 'i'))) {
+    //     return true
+    //   }
+    // }
     //see if noun has a known first-name
     var names = the.word.split(' ').map(function (a) {
       return a.toLowerCase()
